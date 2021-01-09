@@ -1,6 +1,7 @@
 let rec;
 if (!("webkitSpeechRecognition" in window)) {
-    alert("Lo siento, tu navegador no es compatible con la API");
+    window.location.href = "nc.html";
+
 } else {
     rec = new webkitSpeechRecognition();
     rec.lang = "es-ES";

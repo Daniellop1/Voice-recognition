@@ -1,6 +1,6 @@
 let rec;
 if (!("webkitSpeechRecognition" in window)) {
-    alert("Désolé, votre navigateur ne prend pas en charge l'API");
+    window.location.href = "nc.html";
 } else {
     rec = new webkitSpeechRecognition();
     rec.lang = "fr-FR";

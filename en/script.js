@@ -1,6 +1,6 @@
 let rec;
 if (!("webkitSpeechRecognition" in window)) {
-    alert("Sorry, your browser does not support the API");
+    window.location.href = "nc.html";
 } else {
     rec = new webkitSpeechRecognition();
     rec.lang = "en-US";
